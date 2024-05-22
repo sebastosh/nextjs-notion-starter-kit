@@ -13,10 +13,27 @@ html {
   margin: 0;
 }
 
+/* @font-face {
+  font-family: "FiraCode";
+  src: url("./FiraCode-VariableFont_wght.ttf") format("ttf");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: oblique 0deg 12deg;
+} */
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url("./FiraCode-VariableFont_wght.ttf") format('truetype'), url('./FiraCode-Light.woff2') format('woff2'),
+      url('./FiraCode-Light.woff') format('woff'),
+      url('./FiraCode-Light.svg#FiraCode-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
-  --notion-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
+  --notion-font: 'Fira Code';
   font-family: var(--notion-font);
   overflow-x: hidden;
 }
